@@ -56,7 +56,7 @@ public class OGGConverter {
             let srcFile = try AVAudioFile(
                 forReading: src,
                 commonFormat: .pcmFormatInt16,
-                interleaved: false
+                interleaved: true
             )
             let format = srcFile.processingFormat
             guard let buffer = AVAudioPCMBuffer(
